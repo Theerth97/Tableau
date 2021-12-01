@@ -1,0 +1,1784 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0605.1023                               -->
+<workbook source-build='2021.2.0 (20212.21.0605.1023)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='ASS2-PROJECT' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data (Theerthesh - Cab Dataset)' inline='true' name='federated.10axp5c0or5jt51e7wp8d0j4um03' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Theerthesh - Cab Dataset' name='excel-direct.03yr7vf0aqbze717qgppt0hdar7y'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/PROJECT/Theerthesh - Cab Dataset.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.03yr7vf0aqbze717qgppt0hdar7y' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:O6721:no:A1:O6721:0' header='yes' outcome='6'>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='string' name='Zone' ordinal='1' />
+            <column datatype='integer' name='Week Number' ordinal='2' />
+            <column datatype='integer' name='Day' ordinal='3' />
+            <column datatype='string' name='4 hour windows' ordinal='4' />
+            <column datatype='date' name='Date' ordinal='5' />
+            <column datatype='string' name='Time stamp date' ordinal='6' />
+            <column datatype='integer' name='Demand' ordinal='7' />
+            <column datatype='integer' name='Fulfilment %' ordinal='8' />
+            <column datatype='integer' name='Avg. Price' ordinal='9' />
+            <column datatype='integer' name='Avg. Trip Size' ordinal='10' />
+            <column datatype='real' name='Cancellation % (Total)' ordinal='11' />
+            <column datatype='real' name='Driver Cancellation%' ordinal='12' />
+            <column datatype='real' name='Customer Cancellation %' ordinal='13' />
+            <column datatype='real' name='Avg. ETA' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.03yr7vf0aqbze717qgppt0hdar7y' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:O6721:no:A1:O6721:0' header='yes' outcome='6'>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='string' name='Zone' ordinal='1' />
+            <column datatype='integer' name='Week Number' ordinal='2' />
+            <column datatype='integer' name='Day' ordinal='3' />
+            <column datatype='string' name='4 hour windows' ordinal='4' />
+            <column datatype='date' name='Date' ordinal='5' />
+            <column datatype='string' name='Time stamp date' ordinal='6' />
+            <column datatype='integer' name='Demand' ordinal='7' />
+            <column datatype='integer' name='Fulfilment %' ordinal='8' />
+            <column datatype='integer' name='Avg. Price' ordinal='9' />
+            <column datatype='integer' name='Avg. Trip Size' ordinal='10' />
+            <column datatype='real' name='Cancellation % (Total)' ordinal='11' />
+            <column datatype='real' name='Driver Cancellation%' ordinal='12' />
+            <column datatype='real' name='Customer Cancellation %' ordinal='13' />
+            <column datatype='real' name='Avg. ETA' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O6721:no:A1:O6721:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zone]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Zone</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Week Number]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Week Number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4 hour windows</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[4 hour windows]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>4 hour windows</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time stamp date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Time stamp date]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Time stamp date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Demand</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Demand]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Demand</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fulfilment %</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fulfilment %]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Fulfilment %</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg. Price]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Avg. Price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Trip Size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg. Trip Size]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Avg. Trip Size</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cancellation % (Total)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cancellation % (Total)]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Cancellation % (Total)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Cancellation%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Driver Cancellation%]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Driver Cancellation%</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Cancellation %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer Cancellation %]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Customer Cancellation %</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. ETA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. ETA]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Avg. ETA</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_866CCD6AA3254B54BCFC50A459A8B771]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='4 Hour Windows' datatype='string' name='[4 hour windows]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Week Number]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_866CCD6AA3254B54BCFC50A459A8B771]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_0rrp7ji0171re61ejr7p41fv1g4a.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zone</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Week Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Week Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Week Number</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>4 hour windows</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[4 hour windows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>4 hour windows</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time stamp date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time stamp date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time stamp date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6720</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Demand</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Demand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Demand</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>614</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fulfilment %</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fulfilment %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fulfilment %</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Avg. Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. Price</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>207</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. Trip Size</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Avg. Trip Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. Trip Size</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cancellation % (Total)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cancellation % (Total)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cancellation % (Total)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1840</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Driver Cancellation%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Driver Cancellation%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Driver Cancellation%</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>498</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Cancellation %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer Cancellation %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Cancellation %</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1708</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. ETA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg. ETA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. ETA</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1563</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_866CCD6AA3254B54BCFC50A459A8B771'>
+            <properties context=''>
+              <relation connection='excel-direct.03yr7vf0aqbze717qgppt0hdar7y' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:O6721:no:A1:O6721:0' header='yes' outcome='6'>
+                  <column datatype='string' name='City' ordinal='0' />
+                  <column datatype='string' name='Zone' ordinal='1' />
+                  <column datatype='integer' name='Week Number' ordinal='2' />
+                  <column datatype='integer' name='Day' ordinal='3' />
+                  <column datatype='string' name='4 hour windows' ordinal='4' />
+                  <column datatype='date' name='Date' ordinal='5' />
+                  <column datatype='string' name='Time stamp date' ordinal='6' />
+                  <column datatype='integer' name='Demand' ordinal='7' />
+                  <column datatype='integer' name='Fulfilment %' ordinal='8' />
+                  <column datatype='integer' name='Avg. Price' ordinal='9' />
+                  <column datatype='integer' name='Avg. Trip Size' ordinal='10' />
+                  <column datatype='real' name='Cancellation % (Total)' ordinal='11' />
+                  <column datatype='real' name='Driver Cancellation%' ordinal='12' />
+                  <column datatype='real' name='Customer Cancellation %' ordinal='13' />
+                  <column datatype='real' name='Avg. ETA' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Customer Cancellation %]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Driver Cancellation%]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer Cancellation %]' derivation='Sum' name='[sum:Customer Cancellation %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Driver Cancellation%]' derivation='Sum' name='[sum:Driver Cancellation%:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Driver Cancellation%:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Customer Cancellation %:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Customer Cancellation %:qk] + ([federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Driver Cancellation%:qk] + [federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]))</rows>
+        <cols>([federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk] / [federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{5F1F1A5A-BA1D-4C85-85D7-131D4F200A17}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Time stamp date]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time stamp date]' derivation='None' name='[none:Time stamp date:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Time stamp date:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Cancellation % (Total)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Time stamp date:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Time stamp date:nk]</column>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Time stamp date:nk]</cols>
+      </table>
+      <simple-id uuid='{2546D47D-2486-406A-92BF-4CF89B07F729}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{E4F7146D-2ED2-4AE3-96CA-B287577FA5D0}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Fulfilment %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fulfilment %]' derivation='Sum' name='[sum:Fulfilment %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Fulfilment %:qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{AFDA71E2-4CF3-43B2-9BE8-98655CDBBD1C}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{3BEACC7F-457B-4931-B529-C50A0C5E0F7C}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Avg. ETA]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Customer Cancellation %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. ETA]' derivation='Avg' name='[avg:Avg. ETA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Cancellation %]' derivation='Sum' name='[sum:Customer Cancellation %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Customer Cancellation %:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Avg. ETA:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Customer Cancellation %:qk] + [federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Avg. ETA:qk])</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{EFCA5D3A-AB58-4A59-8B3A-DB5991721EC2}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Customer Cancellation %]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Driver Cancellation%]' role='measure' type='quantitative' />
+            <column-instance column='[Customer Cancellation %]' derivation='Avg' name='[avg:Customer Cancellation %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Driver Cancellation%]' derivation='Avg' name='[avg:Driver Cancellation%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Driver Cancellation%:qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Customer Cancellation %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{7F1B6265-EC86-466A-AD6A-9171004929BC}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='integer' name='[Avg. Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Avg. Trip Size]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Avg' name='[avg:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg. Price]' derivation='Sum' name='[sum:Avg. Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg. Trip Size]' derivation='Sum' name='[sum:Avg. Trip Size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. Price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. Price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. Trip Size:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. Price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk] + [federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. Trip Size:qk])</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{697C4AC6-3621-4E42-AFA2-7B220059663B}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Avg. ETA]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Avg. ETA]' derivation='Avg' name='[avg:Avg. ETA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Avg' name='[avg:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg. ETA]' derivation='Sum' name='[sum:Avg. ETA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Avg. ETA:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Avg. ETA:qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{C807BDC5-9BFE-45EB-A8F3-12E51A1C92CF}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Customer Cancellation %]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Driver Cancellation%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Cancellation %]' derivation='Avg' name='[avg:Customer Cancellation %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Driver Cancellation%]' derivation='Avg' name='[avg:Driver Cancellation%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Customer Cancellation %:qk]' />
+              <text column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Driver Cancellation%:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{2DD29056-828D-4A66-A291-4F62FA8EE6D8}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{483C47B7-76E0-490F-B7B8-9057AA5E978E}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Avg. ETA]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. ETA]' derivation='Avg' name='[avg:Avg. ETA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Avg. ETA:qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</cols>
+      </table>
+      <simple-id uuid='{7C2E15D3-CB9B-45C8-8B50-62C7D556ACA6}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]</rows>
+        <cols>([federated.10axp5c0or5jt51e7wp8d0j4um03].[qr:Date:ok] / [federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk])</cols>
+      </table>
+      <simple-id uuid='{6E83EEA6-86C4-4F81-BBED-4C253F66DEB0}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (4)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]</rows>
+        <cols>([federated.10axp5c0or5jt51e7wp8d0j4um03].[mn:Date:ok] / [federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk])</cols>
+      </table>
+      <simple-id uuid='{86ADC10A-0DD6-44DC-9F4B-1370B53E0279}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (5)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]</rows>
+        <cols>([federated.10axp5c0or5jt51e7wp8d0j4um03].[dy:Date:ok] / [federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk])</cols>
+      </table>
+      <simple-id uuid='{437BE289-B662-4774-8DC5-A6016F047550}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (6)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Theerthesh - Cab Dataset)' name='federated.10axp5c0or5jt51e7wp8d0j4um03' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10axp5c0or5jt51e7wp8d0j4um03'>
+            <column datatype='real' name='[Cancellation % (Total)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Demand]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Time stamp date]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time stamp date]' derivation='None' name='[none:Time stamp date:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cancellation % (Total)]' derivation='Sum' name='[sum:Cancellation % (Total):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]'>
+            <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 7&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:City:nk]</column>
+            <column>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Zone:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]</rows>
+        <cols>[federated.10axp5c0or5jt51e7wp8d0j4um03].[none:Time stamp date:nk]</cols>
+      </table>
+      <simple-id uuid='{A11A8DA6-1E87-4A0B-A2EF-201D2729DB9E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8AC881F4-9B95-46D7-8789-2477622DE76B}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{393BAF5C-DB9A-4CE1-ACE7-A48D15C137C3}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBFF2329-07B4-46E0-B620-607C7D9B19B1}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F7607C8E-79B9-4694-A6E2-40DC9248AC23}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FAC8F253-2873-40BA-B046-96CA38B57707}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC54FB6E-1B7E-4F3E-986E-E5E6C5E2358C}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{930D3016-A03B-432E-91C4-97EABACEC888}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{65A161C6-2CE6-4F16-BCBE-CD4FB66E1EDD}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{62D173DB-F8A5-4AFD-9D7F-D2D4FF990E61}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='186'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[avg:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2535328D-49B1-457B-84F3-68A5E5C67DD1}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Demand:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A047192-1F03-4DD6-A5D5-BBDC595306C9}' />
+    </window>
+    <window class='worksheet' name='Sheet 9 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{60BF83B1-5ADB-4546-87F4-65DDC5AD2FF8}' />
+    </window>
+    <window class='worksheet' name='Sheet 9 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CF89239-23D7-429F-8F04-5D15DBA65433}' />
+    </window>
+    <window class='worksheet' name='Sheet 9 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6C320C04-9BE2-432C-8958-7DB02B095CB4}' />
+    </window>
+    <window class='worksheet' name='Sheet 9 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{093F31F0-A3E0-40CC-B673-C1AE35658EC6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 9 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10axp5c0or5jt51e7wp8d0j4um03].[sum:Cancellation % (Total):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D3D2DCB1-2FBD-4881-9F0E-D41C0835AF3B}' />
+    </window>
+  </windows>
+</workbook>
